@@ -1,4 +1,4 @@
-# WBS_Project
+# Tea_Bug
 Tea leaf Diseases Detection
 Solution pipeline has three main stages.
 Acquisition of tea leaf data onground with a controllable UAV

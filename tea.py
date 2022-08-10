@@ -25,15 +25,21 @@ def predict_class(image):
     predictions = classifier_model.predict(test_image)
     scores = tf.nn.softmax(predictions[0])
     image_class = class_name[np.argmax(scores)]
-    result = "The image uploaded is: {}".format(image_class)
-    return result
+    #result = "The image uploaded is: {}".format(image_class)
+    global text
+    if image_class == "Healthy_leaf":
+        text = "There is no Helopeltis found in Leaves."
+    else:
+        text = "These leaves have Helopeltis."
+    return text
+    #return result
 
 if predict_result:  
     figure = plt.figure()
     plt.imshow(image)
     plt.axis('off')
     result = predict_class(image)
-    st.write(result)
+    st.write(text)
     st.pyplot(figure)
 else:
     st.write('')

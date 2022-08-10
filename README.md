@@ -1,4 +1,6 @@
 # Tea Mosquito Bug (Helopeltis theivora) Detection
+ ![ Alt text](GIF. gif) / ! [](GIF. gif)
+
 Tea leaf Diseases Detection
 Solution pipeline has three main stages.
 Acquisition of tea leaf data onground with a controllable UAV

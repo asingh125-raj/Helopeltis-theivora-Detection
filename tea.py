@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from tensorflow import keras
 
-st.title("Tea leaf diseas detection")
+st.title("Tea leaf diseases detection")
 st.header("Helopeltis")
 
 file_uploaded = st.file_uploader("Choose the file")
